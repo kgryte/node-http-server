@@ -47,7 +47,7 @@ var logger = bunyan.createLogger({
 var create = httpServer( opts, logger );
 ```
 
-To specify a `requestListener`,
+To bind a request callback to a server, specify a `requestListener`.
 
 ``` javascript
 var express = require( 'express' );
