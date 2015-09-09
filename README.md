@@ -8,14 +8,14 @@ HTTP Server
 ## Installation
 
 ``` bash
-$ npm install http-server
+$ npm install @kgryte/http-server
 ```
 
 
 ## Usage
 
 ``` javascript
-var httpServer = require( 'http-server' );
+var httpServer = require( '@kgryte/http-server' );
 ```
 
 #### httpServer( options, logger[, requestListener ] )
@@ -189,8 +189,8 @@ $ make view-cov
 Copyright &copy; 2015. Athan Reines.
 
 
-[npm-image]: http://img.shields.io/npm/v/http-server.svg
-[npm-url]: https://npmjs.org/package/http-server
+[npm-image]: http://img.shields.io/npm/v/@kgryte/http-server.svg
+[npm-url]: https://npmjs.org/package/@kgryte/http-server
 
 [travis-image]: http://img.shields.io/travis/kgryte/node-http-server/master.svg
 [travis-url]: https://travis-ci.org/kgryte/node-http-server
