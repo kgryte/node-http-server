@@ -99,6 +99,7 @@ create( done );
 
 ``` javascript
 var bunyan = require( 'bunyan' ),
+	express = require( 'express' ),
 	httpServer = require( '@kgryte/http-server' );
 
 // Specify server options...
@@ -120,8 +121,11 @@ var logger = bunyan.createLogger({
 	]
 });
 
+// Create an express app:
+var app = express();
+
 // Create a function for creating an HTTP server...
-var create = httpServer( opts, logger );
+var create = httpServer( opts, logger, app );
 
 /**
 * FUNCTION: done( error, server )
